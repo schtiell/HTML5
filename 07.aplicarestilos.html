@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aplicando estilos</title>
+    <link rel="stylesheet" href="CSS/01.estilos.css">
+</head>
+<body>
+
+    <h1>Este es un titulo con estilos aplicados</h1>
+    <h1>Este es otro titulo 1</h1>
+
+    <p>Los estilos pueden aplicarse de 3 formas:
+        <ol>
+            <li>Por etiqueta, que aplica el estilo a todas las etiquetas que son del mismo tipo. Ejemplo si tenemos varias etiquetas h2 en una pagina, el estilo afectará a todas las h2
+
+                <h2>Tilulo 1 tipo h2</h2>
+                <h2>Titulo 2 tipo h2</h2>
+                <h2>Titulo 3 tipo h2</h2>
+
+                Sintaxis del estilos por etiqueta:<br> 
+                h2{color: blueviolet;<br>  
+                font-size: 30px;}
+            </li>
+            <br>
+            <li>Por identificador unico, es posible agregar a una etique un identificador unico que la distiga de las demas y aplicar el estilo solo a esa etiqua, agregandole la palabra id. Este identificador no puede ser utilizado en ninguna otra etique html del sitio.
+
+                <h2 id="unico">Titulo 4 con id unico tipo h2</h2>
+
+                Sintaxis del estilos: <br>
+                #unico{
+                    color: coral;
+                    font-size: 50px;} <br><br>
+            </li>
+            <li>Por clase, que permite agregar a diferentes etiquetas este estilo. tanto el titulo h3 como el parrafo utilizan la mis clase colorAzul que define un tipo de color y tipo de letra. <br>
+                
+                    Sintaxis del estilos: <br>
+                    .colorazul{
+                        color: blue;
+                        font-: px;}
+
+                        <h3 class="colorAzul">Titulo 5 tipo h3</h3>
+
+                        <p class="colorAzul">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum cumque mollitia dolor exercitationem ab dolorem nisi ipsa explicabo quibusdam. Sapiente voluptates quis, ex perferendis soluta minus ratione ducimus natus nisi.</p>
+            </li>
+
+        </ol>
+    </p>
+    
+</body>
+</html>

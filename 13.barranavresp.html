@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/07.barranav.css">
+    <title>Barra de Navegación Responsive</title>
+</head>
+<body>
+
+    <nav>
+            <button class="botonMenu" onclick="clicBoton()">Menú</button>
+            <a href="#" class="barranav desaparece">Inicio</a>
+            <a href="#" class="barranav desaparece">Nosotros</a>
+            <a href="#" class="barranav desaparece">Servicios</a>
+            <a href="#" class="barranav desaparece">Contacto</a>
+    </nav>
+
+    <script>
+        function clicBoton(){
+        //    console.log('Boton funciona');
+           var enlace = document.getElementsByClassName('barranav');
+           for(var i=0; i<enlace.length; i++){
+               enlace[i].classList.toggle('desaparece');
+           }        
+        }
+    </script>
+
+    <h1>Uso de Media Querys para diseño Responsive</h1>
+
+    <p>Una media query consiste en un tipo de medio y al menos una consulta que limita las hojas de estilo utilizando características del medio como ancho, alto y color. Se entiende como un módulo CSS3 que permite adaptar la representación del contenido a características del dispositivo. Añadido en CSS3, las media queries dejan que la presentación del contenido se adapte a un rango específico de dispositivos de salida sin tener que cambiar el contenido en sí.</p>
+
+    <p><a href="https://developer.mozilla.org/es/docs/CSS/Media_queries">Más sobre media querys</a></p>
+    
+</body>
+</html>
